@@ -1,0 +1,15 @@
+package com.example.demokotlin.models
+
+import androidx.room.Entity
+
+@Entity(tableName = "quote")
+data class Result(
+    val _id: String,
+    val author: String,
+    val authorSlug: String,
+    val content: String,
+    val dateAdded: String,
+    val dateModified: String,
+    val length: Int,
+    val tags: List<String>
+)
